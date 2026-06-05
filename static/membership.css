@@ -1,0 +1,177 @@
+/* membership.css - Premium Black & Neon Blue Theme */
+
+.membership-section {
+    background-color: #0a0a0c;
+    color: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.membership-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-header h2 span {
+    color: #00d2ff; /* کڑک نیون بلو */
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+}
+
+.section-header p {
+    color: #a0a0a5;
+    font-size: 1rem;
+}
+
+/* Pricing Grid Setup */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+/* Card Styling */
+.price-card {
+    background: #121216;
+    border: 2px solid #1f1f24;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    border-color: #00d2ff;
+    box-shadow: 0 10px 25px rgba(0, 210, 255, 0.15);
+}
+
+/* Most Popular Card Highlight */
+.price-card.popular {
+    background: #141923;
+    border-color: #00d2ff;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);
+    padding: 50px 30px; /* تھوڑا بڑا دکھانے کے لیے */
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00d2ff;
+    color: #000;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
+}
+
+.price-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #00d2ff;
+    vertical-align: super;
+    margin-right: 5px;
+}
+
+.price small {
+    font-size: 1rem;
+    color: #a0a0a5;
+}
+
+/* Features List */
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px 0;
+    text-align: left;
+}
+
+.features li {
+    margin-bottom: 15px;
+    color: #e2e2e5;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+.features li i {
+    margin-right: 10px;
+}
+
+.features li i.fa-check {
+    color: #00d2ff;
+}
+
+.features li.disabled {
+    color: #55555a;
+}
+
+.features li.disabled i {
+    color: #55555a;
+}
+
+/* Button Styling */
+.btn-join {
+    width: 100%;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-join:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.btn-join.premium {
+    background: #00d2ff;
+    color: #000000;
+    border-color: #00d2ff;
+    box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+}
+
+.btn-join.premium:hover {
+    background: transparent;
+    color: #00d2ff;
+    box-shadow: none;
+}

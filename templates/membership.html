@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'membership.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="membership-section">
+    <div class="membership-container">
+        <div class="section-header">
+            <h2>CHOOSE YOUR <span>LEVEL</span></h2>
+            <p>Push your limits and crush your fitness goals with our premium plans.</p>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>BEGINNER</h3>
+                <div class="price"><span>PKR</span> 3,000<small>/mo</small></div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Access to Gym Floor</li>
+                    <li><i class="fas fa-check"></i> Basic Cardio Equipment</li>
+                    <li><i class="fas fa-check"></i> Locker Room & Showers</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Heavy Bag & MMA Zone</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Personal Trainer Help</li>
+                </ul>
+                <button class="btn-join">JOIN NOW</button>
+            </div>
+
+            <div class="price-card popular">
+                <div class="badge">MOST POPULAR</div>
+                <h3>PRO BEAST</h3>
+                <div class="price"><span>PKR</span> 5,000<small>/mo</small></div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> 24/7 Full Gym Access</li>
+                    <li><i class="fas fa-check"></i> Free Weights & Calisthenics Area</li>
+                    <li><i class="fas fa-check"></i> General Trainer Support</li>
+                    <li><i class="fas fa-check"></i> Boxing & Heavy Bag Area</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Customized Diet Plans</li>
+                </ul>
+                <button class="btn-join premium">JOIN NOW</button>
+            </div>
+
+            <div class="price-card">
+                <h3>EXTREME MMA</h3>
+                <div class="price"><span>PKR</span> 8,000<small>/mo</small></div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Unlimited Gym & Cage Access</li>
+                    <li><i class="fas fa-check"></i> Combat Sports & Sparring Zone</li>
+                    <li><i class="fas fa-check"></i> 1-on-1 Fight Coach Sessions</li>
+                    <li><i class="fas fa-check"></i> Bodybuilding Diet & Supplements Guide</li>
+                    <li><i class="fas fa-check"></i> Personalized Workout Routine</li>
+                </ul>
+                <button class="btn-join">JOIN NOW</button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'membership.js' %}"></script>
+{% endblock %}

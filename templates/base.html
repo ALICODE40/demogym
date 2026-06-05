@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">  
+    {% block extracss %}{% endblock %}
+    <title>Document</title>
+</head>
+<body>
+    <nav class="gym-navbar">
+    <a href="/" class="logo">
+            <img src="{% static 'ironlifterlogo.jpg' %}">
+        </a>
+    <ul class="nav-links">
+        <li><a href="/membership">Membership Details</a></li>
+        <li><a href="/machines">Modern Equipments</a></li>
+    </ul>
+
+    <div class="nav-buttons">
+        <a href="#" class="btn-trial">Free 1-Day Trial</a>
+        <a href="#" class="btn-signup">Sign Up</a>
+    </div>
+
+    <div class="hamburger-menu" id="hamburger-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="mobile-dropdown" id="mobile-menu">
+        <a href="/membership">Membership Details</a>
+        <a href="/machines">Modern Equipments</a>
+        <a href="#" class="btn-trial-mobile">Free 1-Day Trial</a>
+        <a href="#" class="btn-signup-mobile">Sign Up</a>
+    </div>
+</nav>
+    <div class="backvideo">
+        <video class="backgroundvideo" src="{%static 'gymshots.mp4' %}" autoplay loop muted></video>
+        <div class="backvideocontant">
+          <div class="backtextcontant">
+                <img src="{% static 'goldsgym-logo.svg' %}">
+                  <pre>Iron crushes the weak
+       version of you</pre>
+                
+            </div>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+
+<footer class="gym-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h3 class="footer-logo">iron<span>Lifters</span></h3>
+            <p class="footer-about">Build your ultimate physique and unleash your potential with our elite training facilities.</p>
+        </div>
+        
+        <div class="footer-links">
+            <h4 class="links-title">Quick Links</h4>
+            <ul>
+                <li><a href="#">Our Offerings</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Class Schedule</a></li>
+                <li><a href="#">Partner Benefits</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4 class="links-title">Contact Us</h4>
+            <p>📍 Gym Location, Hyderabad, Pakistan</p>
+            <p>📞 +92 300 1234567</p>
+            <p>✉️ support@planetfitness.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Planet Fitness. Built from scratch by a Pro Developer. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="{% static 'java.js' %}"> </script>
+    {% block java %}{% endblock  %}
+</body>
+</html>

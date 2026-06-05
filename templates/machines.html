@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'machines.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="machines-section">
+    <div class="machines-container">
+        <div class="section-header">
+            <h2>ADVANCED <span>EQUIPMENT</span></h2>
+            <p>Train with world-class, heavy-duty gear designed for maximum performance.</p>
+        </div>
+
+        <div class="machines-list">
+            <div class="machine-card">
+                <div class="machine-image">
+                    <img src="{% static 'MMA.jpg' %}" alt="Professional MMA Cage">
+                </div>
+                <div class="machine-info">
+                    <span class="category-tag">COMBAT ZONE</span>
+                    <h3>PRO OCTAGON MMA CAGE</h3>
+                    <p>Our official size pro octagon cage is built for hardcore sparring, takedown drills, and combat simulation. Shock-absorbing matting to protect fighters during intense training.</p>
+                    <div class="specs">
+                        <div class="spec-item"><strong>Target:</strong> Endurance, Combat</div>
+                        <div class="spec-item"><strong>Level:</strong> Advanced to Pro</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="machine-card reverse">
+                <div class="machine-image">
+                    <img src="{% static 'advan.jpg' %}" alt="Heavy Duty Squat Rack">
+                </div>
+                <div class="machine-info">
+                    <span class="category-tag">STRENGTH</span>
+                    <h3>MONSTER SQUAT & POWER RACK</h3>
+                    <p>Heavy-duty steel construction designed for extreme bodybuilding and powerlifting. Features adjustable safety bars, pull-up stations, and band pegs for progressive resistance.</p>
+                    <div class="specs">
+                        <div class="spec-item"><strong>Target:</strong> Quads, Glutes, Core</div>
+                        <div class="spec-item"><strong>Level:</strong> All Levels</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="machine-card">
+                <div class="machine-image">
+                    <img src="{% static 'cable.jpg' %}" alt="Cable Crossover Machine">
+                </div>
+                <div class="machine-info">
+                    <span class="category-tag">ISOLATION</span>
+                    <h3>PRO CABLE CROSSOVER STATION</h3>
+                    <p>Multi-functional dual-stack cable system for ultimate chest flies, lat pulldowns, and arm isolation. Ultra-smooth pulley action ensures constant tension on the muscles.</p>
+                    <div class="specs">
+                        <div class="spec-item"><strong>Target:</strong> Chest, Arms, Back</div>
+                        <div class="spec-item"><strong>Level:</strong> Intermediate to Advanced</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'machines.js' %}"></script>
+{% endblock %}
