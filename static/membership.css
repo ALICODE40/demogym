@@ -29,7 +29,7 @@
 }
 
 .section-header h2 span {
-    color: #00d2ff; /* کڑک نیون بلو */
+    color: #00d2ff; 
     text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
 }
 
@@ -68,7 +68,7 @@
     background: #141923;
     border-color: #00d2ff;
     box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);
-    padding: 50px 30px; /* تھوڑا بڑا دکھانے کے لیے */
+    padding: 50px 30px;
 }
 
 .badge {
